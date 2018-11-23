@@ -23,11 +23,11 @@ class FlikrPhotoSearchPresenter: FlikrPhotoSearchPresenting {
     
     //MARK: Collection Source
     func numberOfItems() -> Int {
-        return viewModel?.photos.count ?? 0
+        return viewModel.photos.count
     }
     
     func item(at indexPath: IndexPath) -> Photo? {
-        return viewModel?.photos[indexPath.row]
+        return viewModel.photos[indexPath.row]
     }
     
     //MARK: Fetching
@@ -55,8 +55,12 @@ class FlikrPhotoSearchPresenter: FlikrPhotoSearchPresenting {
 extension FlikrPhotoSearchPresenter: FlikrPhotosConsuming {
    
     func didFinishLoadingSuccess(photos: [Photo]) {
-        if photos.count == 0 {loadedAll = true}
         view?.hideHud()
+        if photos.count == 0 {
+            loadedAll = true
+            return
+        }
+        
         viewModel?.photos.append(contentsOf: photos)
         view?.reloadCollectionView()
     }

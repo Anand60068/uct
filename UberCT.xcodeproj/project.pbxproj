@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173A341F21A80238004FC352 /* MockFlikrInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A341E21A80238004FC352 /* MockFlikrInteractor.swift */; };
 		17CE2ED321A7CB0600E1F38D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2ED221A7CB0600E1F38D /* AppDelegate.swift */; };
 		17CE2ED821A7CB0600E1F38D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CE2ED621A7CB0600E1F38D /* Main.storyboard */; };
 		17CE2EDA21A7CB0800E1F38D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CE2ED921A7CB0800E1F38D /* Assets.xcassets */; };
@@ -29,6 +30,9 @@
 		17CE2F2121A7E27E00E1F38D /* PhotosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17CE2F1F21A7E27E00E1F38D /* PhotosCollectionViewCell.xib */; };
 		17CE2F2321A7E8FC00E1F38D /* Photo+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F2221A7E8FC00E1F38D /* Photo+URL.swift */; };
 		17CE2F2521A7E91F00E1F38D /* UIImageView+Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F2421A7E91F00E1F38D /* UIImageView+Lazy.swift */; };
+		17CE2F2721A7FB4100E1F38D /* FlikrPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F2621A7FB4100E1F38D /* FlikrPresenterTest.swift */; };
+		17CE2F2A21A7FBBC00E1F38D /* MockFlikrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F2921A7FBBC00E1F38D /* MockFlikrViewController.swift */; };
+		17CE2F2C21A7FF7A00E1F38D /* PhotoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F2B21A7FF7A00E1F38D /* PhotoLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		173A341E21A80238004FC352 /* MockFlikrInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFlikrInteractor.swift; sourceTree = "<group>"; };
 		17CE2ECF21A7CB0600E1F38D /* UberCT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberCT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CE2ED221A7CB0600E1F38D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17CE2ED721A7CB0600E1F38D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +82,9 @@
 		17CE2F1F21A7E27E00E1F38D /* PhotosCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosCollectionViewCell.xib; sourceTree = "<group>"; };
 		17CE2F2221A7E8FC00E1F38D /* Photo+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+URL.swift"; sourceTree = "<group>"; };
 		17CE2F2421A7E91F00E1F38D /* UIImageView+Lazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Lazy.swift"; sourceTree = "<group>"; };
+		17CE2F2621A7FB4100E1F38D /* FlikrPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlikrPresenterTest.swift; sourceTree = "<group>"; };
+		17CE2F2921A7FBBC00E1F38D /* MockFlikrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFlikrViewController.swift; sourceTree = "<group>"; };
+		17CE2F2B21A7FF7A00E1F38D /* PhotoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +151,7 @@
 		17CE2EE621A7CB0800E1F38D /* UberCTTests */ = {
 			isa = PBXGroup;
 			children = (
+				17CE2F2821A7FBA100E1F38D /* Search */,
 				17CE2EE721A7CB0800E1F38D /* UberCTTests.swift */,
 				17CE2EE921A7CB0800E1F38D /* Info.plist */,
 			);
@@ -216,6 +225,17 @@
 				17CE2F1F21A7E27E00E1F38D /* PhotosCollectionViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		17CE2F2821A7FBA100E1F38D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				17CE2F2621A7FB4100E1F38D /* FlikrPresenterTest.swift */,
+				17CE2F2921A7FBBC00E1F38D /* MockFlikrViewController.swift */,
+				17CE2F2B21A7FF7A00E1F38D /* PhotoLoader.swift */,
+				173A341E21A80238004FC352 /* MockFlikrInteractor.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,7 +393,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173A341F21A80238004FC352 /* MockFlikrInteractor.swift in Sources */,
 				17CE2EE821A7CB0800E1F38D /* UberCTTests.swift in Sources */,
+				17CE2F2C21A7FF7A00E1F38D /* PhotoLoader.swift in Sources */,
+				17CE2F2A21A7FBBC00E1F38D /* MockFlikrViewController.swift in Sources */,
+				17CE2F2721A7FB4100E1F38D /* FlikrPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
