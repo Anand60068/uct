@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17CE2ED321A7CB0600E1F38D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2ED221A7CB0600E1F38D /* AppDelegate.swift */; };
+		17CE2ED821A7CB0600E1F38D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CE2ED621A7CB0600E1F38D /* Main.storyboard */; };
+		17CE2EDA21A7CB0800E1F38D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CE2ED921A7CB0800E1F38D /* Assets.xcassets */; };
+		17CE2EDD21A7CB0800E1F38D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CE2EDB21A7CB0800E1F38D /* LaunchScreen.storyboard */; };
+		17CE2EE821A7CB0800E1F38D /* UberCTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2EE721A7CB0800E1F38D /* UberCTTests.swift */; };
+		17CE2EF321A7CB0800E1F38D /* UberCTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2EF221A7CB0800E1F38D /* UberCTUITests.swift */; };
+		17CE2F0321A7CB3600E1F38D /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F0221A7CB3600E1F38D /* ServiceRequest.swift */; };
+		17CE2F0621A7CE7900E1F38D /* FlikrPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F0521A7CE7900E1F38D /* FlikrPhotos.swift */; };
+		17CE2F0821A7CEBA00E1F38D /* FlikrResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F0721A7CEBA00E1F38D /* FlikrResponseError.swift */; };
+		17CE2F0A21A7CF2A00E1F38D /* FilkerPhotosRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F0921A7CF2A00E1F38D /* FilkerPhotosRequest.swift */; };
+		17CE2F0E21A7D66300E1F38D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F0D21A7D66300E1F38D /* HomeViewController.swift */; };
+		17CE2F1521A7D6F600E1F38D /* FlikrPhotoSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CE2F0F21A7D6F600E1F38D /* FlikrPhotoSearch.storyboard */; };
+		17CE2F1621A7D6F600E1F38D /* FlikerPhotoSearchContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F1021A7D6F600E1F38D /* FlikerPhotoSearchContract.swift */; };
+		17CE2F1721A7D6F600E1F38D /* FlikerPhotoSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F1121A7D6F600E1F38D /* FlikerPhotoSearchPresenter.swift */; };
+		17CE2F1821A7D6F600E1F38D /* FlikerPhotoSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F1221A7D6F600E1F38D /* FlikerPhotoSearchRouter.swift */; };
+		17CE2F1921A7D6F600E1F38D /* FlikerPhotoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F1321A7D6F600E1F38D /* FlikerPhotoSearchViewController.swift */; };
+		17CE2F1A21A7D6F600E1F38D /* FlikerPhotoSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F1421A7D6F600E1F38D /* FlikerPhotoSearchInteractor.swift */; };
+		17CE2F1C21A7DA8E00E1F38D /* FlikrPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F1B21A7DA8E00E1F38D /* FlikrPhotosViewModel.swift */; };
+		17CE2F2021A7E27E00E1F38D /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F1E21A7E27E00E1F38D /* PhotosCollectionViewCell.swift */; };
+		17CE2F2121A7E27E00E1F38D /* PhotosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17CE2F1F21A7E27E00E1F38D /* PhotosCollectionViewCell.xib */; };
+		17CE2F2321A7E8FC00E1F38D /* Photo+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F2221A7E8FC00E1F38D /* Photo+URL.swift */; };
+		17CE2F2521A7E91F00E1F38D /* UIImageView+Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE2F2421A7E91F00E1F38D /* UIImageView+Lazy.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17CE2EE421A7CB0800E1F38D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17CE2EC721A7CB0600E1F38D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17CE2ECE21A7CB0600E1F38D;
+			remoteInfo = UberCT;
+		};
+		17CE2EEF21A7CB0800E1F38D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17CE2EC721A7CB0600E1F38D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17CE2ECE21A7CB0600E1F38D;
+			remoteInfo = UberCT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17CE2ECF21A7CB0600E1F38D /* UberCT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberCT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CE2ED221A7CB0600E1F38D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17CE2ED721A7CB0600E1F38D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17CE2ED921A7CB0800E1F38D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17CE2EDC21A7CB0800E1F38D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17CE2EDE21A7CB0800E1F38D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17CE2EE321A7CB0800E1F38D /* UberCTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberCTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CE2EE721A7CB0800E1F38D /* UberCTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCTTests.swift; sourceTree = "<group>"; };
+		17CE2EE921A7CB0800E1F38D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17CE2EEE21A7CB0800E1F38D /* UberCTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberCTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CE2EF221A7CB0800E1F38D /* UberCTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCTUITests.swift; sourceTree = "<group>"; };
+		17CE2EF421A7CB0800E1F38D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17CE2F0221A7CB3600E1F38D /* ServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		17CE2F0521A7CE7900E1F38D /* FlikrPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlikrPhotos.swift; sourceTree = "<group>"; };
+		17CE2F0721A7CEBA00E1F38D /* FlikrResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlikrResponseError.swift; sourceTree = "<group>"; };
+		17CE2F0921A7CF2A00E1F38D /* FilkerPhotosRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilkerPhotosRequest.swift; sourceTree = "<group>"; };
+		17CE2F0D21A7D66300E1F38D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		17CE2F0F21A7D6F600E1F38D /* FlikrPhotoSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlikrPhotoSearch.storyboard; sourceTree = "<group>"; };
+		17CE2F1021A7D6F600E1F38D /* FlikerPhotoSearchContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlikerPhotoSearchContract.swift; sourceTree = "<group>"; };
+		17CE2F1121A7D6F600E1F38D /* FlikerPhotoSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlikerPhotoSearchPresenter.swift; sourceTree = "<group>"; };
+		17CE2F1221A7D6F600E1F38D /* FlikerPhotoSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlikerPhotoSearchRouter.swift; sourceTree = "<group>"; };
+		17CE2F1321A7D6F600E1F38D /* FlikerPhotoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlikerPhotoSearchViewController.swift; sourceTree = "<group>"; };
+		17CE2F1421A7D6F600E1F38D /* FlikerPhotoSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlikerPhotoSearchInteractor.swift; sourceTree = "<group>"; };
+		17CE2F1B21A7DA8E00E1F38D /* FlikrPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlikrPhotosViewModel.swift; sourceTree = "<group>"; };
+		17CE2F1E21A7E27E00E1F38D /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		17CE2F1F21A7E27E00E1F38D /* PhotosCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosCollectionViewCell.xib; sourceTree = "<group>"; };
+		17CE2F2221A7E8FC00E1F38D /* Photo+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+URL.swift"; sourceTree = "<group>"; };
+		17CE2F2421A7E91F00E1F38D /* UIImageView+Lazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Lazy.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17CE2ECC21A7CB0600E1F38D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CE2EE021A7CB0800E1F38D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CE2EEB21A7CB0800E1F38D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17CE2EC621A7CB0600E1F38D = {
+			isa = PBXGroup;
+			children = (
+				17CE2ED121A7CB0600E1F38D /* UberCT */,
+				17CE2EE621A7CB0800E1F38D /* UberCTTests */,
+				17CE2EF121A7CB0800E1F38D /* UberCTUITests */,
+				17CE2ED021A7CB0600E1F38D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17CE2ED021A7CB0600E1F38D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17CE2ECF21A7CB0600E1F38D /* UberCT.app */,
+				17CE2EE321A7CB0800E1F38D /* UberCTTests.xctest */,
+				17CE2EEE21A7CB0800E1F38D /* UberCTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17CE2ED121A7CB0600E1F38D /* UberCT */ = {
+			isa = PBXGroup;
+			children = (
+				17CE2F0B21A7D28C00E1F38D /* Feature */,
+				17CE2F0121A7CB1700E1F38D /* Extensions */,
+				17CE2F0021A7CB1000E1F38D /* Service */,
+				17CE2ED221A7CB0600E1F38D /* AppDelegate.swift */,
+				17CE2F0D21A7D66300E1F38D /* HomeViewController.swift */,
+				17CE2ED621A7CB0600E1F38D /* Main.storyboard */,
+				17CE2ED921A7CB0800E1F38D /* Assets.xcassets */,
+				17CE2EDB21A7CB0800E1F38D /* LaunchScreen.storyboard */,
+				17CE2EDE21A7CB0800E1F38D /* Info.plist */,
+			);
+			path = UberCT;
+			sourceTree = "<group>";
+		};
+		17CE2EE621A7CB0800E1F38D /* UberCTTests */ = {
+			isa = PBXGroup;
+			children = (
+				17CE2EE721A7CB0800E1F38D /* UberCTTests.swift */,
+				17CE2EE921A7CB0800E1F38D /* Info.plist */,
+			);
+			path = UberCTTests;
+			sourceTree = "<group>";
+		};
+		17CE2EF121A7CB0800E1F38D /* UberCTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17CE2EF221A7CB0800E1F38D /* UberCTUITests.swift */,
+				17CE2EF421A7CB0800E1F38D /* Info.plist */,
+			);
+			path = UberCTUITests;
+			sourceTree = "<group>";
+		};
+		17CE2F0021A7CB1000E1F38D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				17CE2F0421A7CE6400E1F38D /* PhotoRequest */,
+				17CE2F0221A7CB3600E1F38D /* ServiceRequest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		17CE2F0121A7CB1700E1F38D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17CE2F2221A7E8FC00E1F38D /* Photo+URL.swift */,
+				17CE2F2421A7E91F00E1F38D /* UIImageView+Lazy.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		17CE2F0421A7CE6400E1F38D /* PhotoRequest */ = {
+			isa = PBXGroup;
+			children = (
+				17CE2F0521A7CE7900E1F38D /* FlikrPhotos.swift */,
+				17CE2F0721A7CEBA00E1F38D /* FlikrResponseError.swift */,
+				17CE2F0921A7CF2A00E1F38D /* FilkerPhotosRequest.swift */,
+			);
+			path = PhotoRequest;
+			sourceTree = "<group>";
+		};
+		17CE2F0B21A7D28C00E1F38D /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				17CE2F0C21A7D29300E1F38D /* Search */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		17CE2F0C21A7D29300E1F38D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				17CE2F1D21A7E04F00E1F38D /* Cells */,
+				17CE2F0F21A7D6F600E1F38D /* FlikrPhotoSearch.storyboard */,
+				17CE2F1021A7D6F600E1F38D /* FlikerPhotoSearchContract.swift */,
+				17CE2F1121A7D6F600E1F38D /* FlikerPhotoSearchPresenter.swift */,
+				17CE2F1221A7D6F600E1F38D /* FlikerPhotoSearchRouter.swift */,
+				17CE2F1321A7D6F600E1F38D /* FlikerPhotoSearchViewController.swift */,
+				17CE2F1421A7D6F600E1F38D /* FlikerPhotoSearchInteractor.swift */,
+				17CE2F1B21A7DA8E00E1F38D /* FlikrPhotosViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		17CE2F1D21A7E04F00E1F38D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				17CE2F1E21A7E27E00E1F38D /* PhotosCollectionViewCell.swift */,
+				17CE2F1F21A7E27E00E1F38D /* PhotosCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17CE2ECE21A7CB0600E1F38D /* UberCT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17CE2EF721A7CB0800E1F38D /* Build configuration list for PBXNativeTarget "UberCT" */;
+			buildPhases = (
+				17CE2ECB21A7CB0600E1F38D /* Sources */,
+				17CE2ECC21A7CB0600E1F38D /* Frameworks */,
+				17CE2ECD21A7CB0600E1F38D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UberCT;
+			productName = UberCT;
+			productReference = 17CE2ECF21A7CB0600E1F38D /* UberCT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17CE2EE221A7CB0800E1F38D /* UberCTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17CE2EFA21A7CB0800E1F38D /* Build configuration list for PBXNativeTarget "UberCTTests" */;
+			buildPhases = (
+				17CE2EDF21A7CB0800E1F38D /* Sources */,
+				17CE2EE021A7CB0800E1F38D /* Frameworks */,
+				17CE2EE121A7CB0800E1F38D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17CE2EE521A7CB0800E1F38D /* PBXTargetDependency */,
+			);
+			name = UberCTTests;
+			productName = UberCTTests;
+			productReference = 17CE2EE321A7CB0800E1F38D /* UberCTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17CE2EED21A7CB0800E1F38D /* UberCTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17CE2EFD21A7CB0800E1F38D /* Build configuration list for PBXNativeTarget "UberCTUITests" */;
+			buildPhases = (
+				17CE2EEA21A7CB0800E1F38D /* Sources */,
+				17CE2EEB21A7CB0800E1F38D /* Frameworks */,
+				17CE2EEC21A7CB0800E1F38D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17CE2EF021A7CB0800E1F38D /* PBXTargetDependency */,
+			);
+			name = UberCTUITests;
+			productName = UberCTUITests;
+			productReference = 17CE2EEE21A7CB0800E1F38D /* UberCTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17CE2EC721A7CB0600E1F38D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Anand;
+				TargetAttributes = {
+					17CE2ECE21A7CB0600E1F38D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					17CE2EE221A7CB0800E1F38D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 17CE2ECE21A7CB0600E1F38D;
+					};
+					17CE2EED21A7CB0800E1F38D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 17CE2ECE21A7CB0600E1F38D;
+					};
+				};
+			};
+			buildConfigurationList = 17CE2ECA21A7CB0600E1F38D /* Build configuration list for PBXProject "UberCT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17CE2EC621A7CB0600E1F38D;
+			productRefGroup = 17CE2ED021A7CB0600E1F38D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17CE2ECE21A7CB0600E1F38D /* UberCT */,
+				17CE2EE221A7CB0800E1F38D /* UberCTTests */,
+				17CE2EED21A7CB0800E1F38D /* UberCTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17CE2ECD21A7CB0600E1F38D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CE2F1521A7D6F600E1F38D /* FlikrPhotoSearch.storyboard in Resources */,
+				17CE2F2121A7E27E00E1F38D /* PhotosCollectionViewCell.xib in Resources */,
+				17CE2EDD21A7CB0800E1F38D /* LaunchScreen.storyboard in Resources */,
+				17CE2EDA21A7CB0800E1F38D /* Assets.xcassets in Resources */,
+				17CE2ED821A7CB0600E1F38D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CE2EE121A7CB0800E1F38D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CE2EEC21A7CB0800E1F38D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17CE2ECB21A7CB0600E1F38D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CE2F2321A7E8FC00E1F38D /* Photo+URL.swift in Sources */,
+				17CE2F1721A7D6F600E1F38D /* FlikerPhotoSearchPresenter.swift in Sources */,
+				17CE2F0821A7CEBA00E1F38D /* FlikrResponseError.swift in Sources */,
+				17CE2F1621A7D6F600E1F38D /* FlikerPhotoSearchContract.swift in Sources */,
+				17CE2ED321A7CB0600E1F38D /* AppDelegate.swift in Sources */,
+				17CE2F2021A7E27E00E1F38D /* PhotosCollectionViewCell.swift in Sources */,
+				17CE2F2521A7E91F00E1F38D /* UIImageView+Lazy.swift in Sources */,
+				17CE2F1921A7D6F600E1F38D /* FlikerPhotoSearchViewController.swift in Sources */,
+				17CE2F0321A7CB3600E1F38D /* ServiceRequest.swift in Sources */,
+				17CE2F1A21A7D6F600E1F38D /* FlikerPhotoSearchInteractor.swift in Sources */,
+				17CE2F1821A7D6F600E1F38D /* FlikerPhotoSearchRouter.swift in Sources */,
+				17CE2F0621A7CE7900E1F38D /* FlikrPhotos.swift in Sources */,
+				17CE2F0E21A7D66300E1F38D /* HomeViewController.swift in Sources */,
+				17CE2F1C21A7DA8E00E1F38D /* FlikrPhotosViewModel.swift in Sources */,
+				17CE2F0A21A7CF2A00E1F38D /* FilkerPhotosRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CE2EDF21A7CB0800E1F38D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CE2EE821A7CB0800E1F38D /* UberCTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CE2EEA21A7CB0800E1F38D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CE2EF321A7CB0800E1F38D /* UberCTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17CE2EE521A7CB0800E1F38D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17CE2ECE21A7CB0600E1F38D /* UberCT */;
+			targetProxy = 17CE2EE421A7CB0800E1F38D /* PBXContainerItemProxy */;
+		};
+		17CE2EF021A7CB0800E1F38D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17CE2ECE21A7CB0600E1F38D /* UberCT */;
+			targetProxy = 17CE2EEF21A7CB0800E1F38D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17CE2ED621A7CB0600E1F38D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17CE2ED721A7CB0600E1F38D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17CE2EDB21A7CB0800E1F38D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17CE2EDC21A7CB0800E1F38D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17CE2EF521A7CB0800E1F38D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17CE2EF621A7CB0800E1F38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17CE2EF821A7CB0800E1F38D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberCT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uber.UberCT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17CE2EF921A7CB0800E1F38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberCT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uber.UberCT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		17CE2EFB21A7CB0800E1F38D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberCTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uber.UberCTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberCT.app/UberCT";
+			};
+			name = Debug;
+		};
+		17CE2EFC21A7CB0800E1F38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberCTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uber.UberCTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberCT.app/UberCT";
+			};
+			name = Release;
+		};
+		17CE2EFE21A7CB0800E1F38D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberCTUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uber.UberCTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UberCT;
+			};
+			name = Debug;
+		};
+		17CE2EFF21A7CB0800E1F38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberCTUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uber.UberCTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UberCT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17CE2ECA21A7CB0600E1F38D /* Build configuration list for PBXProject "UberCT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CE2EF521A7CB0800E1F38D /* Debug */,
+				17CE2EF621A7CB0800E1F38D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17CE2EF721A7CB0800E1F38D /* Build configuration list for PBXNativeTarget "UberCT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CE2EF821A7CB0800E1F38D /* Debug */,
+				17CE2EF921A7CB0800E1F38D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17CE2EFA21A7CB0800E1F38D /* Build configuration list for PBXNativeTarget "UberCTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CE2EFB21A7CB0800E1F38D /* Debug */,
+				17CE2EFC21A7CB0800E1F38D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17CE2EFD21A7CB0800E1F38D /* Build configuration list for PBXNativeTarget "UberCTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CE2EFE21A7CB0800E1F38D /* Debug */,
+				17CE2EFF21A7CB0800E1F38D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17CE2EC721A7CB0600E1F38D /* Project object */;
+}
